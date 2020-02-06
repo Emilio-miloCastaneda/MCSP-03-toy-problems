@@ -22,5 +22,42 @@
  */
 
 Array.prototype.isSubsetOf = function(arr) {
-  // your code here
+    let results = [];
+    
+    for(var i = 0; i < this.length; i++) {  //loop through arr   
+        let indexFA = this[i];
+        for(var i = 0; i < arr.length; i++) {
+            let indexSA = arr[i];
+            if(indexSA === indexFA) {
+                results.push(indexSA);
+            }
+        }  
+    }
+    if(results.length > 0) {
+        return true;
+    } else {
+        return false;
+    }
 };
+
+
+
+//var isSubsetOf = (inputArr, arr) => {
+//    let results = [];
+//    
+//        for(var i = 0; i < inputArr.length; i++) {  //loop through arr   
+//            let indexFA = inputArr[i];
+//            for(var i = 0; i < arr.length; i++) {
+//                let indexSA = arr[i];
+//                if(indexSA === indexFA) {
+//                    results.push(indexSA);
+//                }
+//            }  
+//        }
+//        if(results.length > 0) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+//}
+var a = ['commit', 'rebase'];

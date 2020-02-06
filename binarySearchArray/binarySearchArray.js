@@ -25,11 +25,9 @@
 //};
 
 const binarySearch = function(array, target) {
-    let element;
     if(array.length > 0) {
         for(let i =0; i < array.length; i++) {
             let ele = array[i];
-            element = ele;
             if(ele === target) {
                 return i;
             }
@@ -40,6 +38,6 @@ const binarySearch = function(array, target) {
 
 var bombaclat = [1,2,3,4,5,6,23,56,32,678,31,43,7,7654,3] 
 
-console.log(binarySearch(bombaclat, 678))
+console.log(binarySearch(bombaclat, 32))
 
 

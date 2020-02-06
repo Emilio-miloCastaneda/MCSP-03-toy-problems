@@ -13,5 +13,8 @@
  */
 
 var allAnagrams = function(string) {
-  // Your code here.
+  //Create a variable with an empty array.
+    //if the string is not in the created array
+      //put the string in the array
+  //otherwis
 };

@@ -42,17 +42,18 @@ var commoncharacters = function(str1, str2) {
     var string2 = str2.slice();
     
     for(var i = 0; i < string1.length; i++) {  
-            var str1Index = string1[i];  
+            var str1Index = string1[i];
+            var str2Index;  
                 for(var i = 0; i < string2.length; i++) {
-                    var str2Index = string2[i];
-                    if(str1Index === str2Index) {
-                    commons.push(str1Index)
+                    str2Index = string2[i];
+                    console.log(str2Index);
                 }
-            }
-        
+            //if(str1Index === str2Index) {
+            //    commons.push(str1Index)
+            //}
         }
-    
-    return commons.join()
+    // return commons.join()
+    console.log(commoncharacters('acexivou', 'aegihobu'))
 }
 
-console.log(commoncharacters('acexivou', 'aegihobu'))
+
