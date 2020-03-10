@@ -6,4 +6,18 @@
  * whitespace on each side of dad).
  */
 
-var longestPalindrome = function(string) {};
+var longestPalindrome = function(string) {
+    let listOfPalidromes = [];
+
+    for(let i = 0; i < string.length; i++) {
+        let currChar = string[i];
+        for(let j = i++; j < string.length; j++) {
+            let lastChar = string[j];
+            if(currChar === lastChar) {
+                listOfPalidromes.push(string.split())
+            }
+        }
+    }
+};
+
+longestPalindrome('Hannah is a mom');
