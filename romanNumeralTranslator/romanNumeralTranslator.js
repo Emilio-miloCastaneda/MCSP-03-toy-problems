@@ -27,5 +27,24 @@ var DIGIT_VALUES = {
 };
 
 var translateRomanNumeral = function(romanNumeral) {
-  // TODO: Implement me!
-};
+  // if given more than two characters in place of roman numeral
+    //iterate through the string to get to each individual character
+    // if the current index in the string is equal to the character in digit value
+      // set as a variable romanumtotal
+    // if the next roman numeral is greater than the previous
+       // subtract the largest number from the smallest number
+       // return the total of the roman numeral
+  var total;
+  if(romanNumeral.length < 2) {
+    for(var i = 0; i < romanNumeral.length; i++) {
+      if(romanNumeral[i] === DIGIT_VALUES[romanNumeral[i]]) {
+        total = DIGIT_VALUES[romanNumeral[i]];
+      } else {
+        total += DIGIT_VALUES[romanNumeral[i]]
+      }
+    }
+  }
+  return total;
+}
+
+console.log(translateRomanNumeral('IV'))
